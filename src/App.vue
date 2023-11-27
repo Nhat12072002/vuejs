@@ -1,31 +1,25 @@
-<!-- App.vue -->
+<!-- src/App.vue -->
 <template>
   <div id="app">
-    <ParentComponent />
-    <AnotherChildComponent />
+    <DynamicTabbedLayout />
   </div>
 </template>
 
 <script>
-import ParentComponent from './components/ParentComponent.vue';
-import AnotherChildComponent from './components/AnotherChildComponent.vue';
-import { createApp } from 'vue';
-
-
+import DynamicTabbedLayout from './components/DynamicTabbedLayout.vue';
 
 export default {
   components: {
-    ParentComponent,
-    
+    DynamicTabbedLayout,
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 </style>
