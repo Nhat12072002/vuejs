@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # my-appnice
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,7 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# vuejs
+This is vuejs
+>>>>>>> 92de3e8f2aba2ae60d6c3cf27c27930bfc5fdaba
