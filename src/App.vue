@@ -1,28 +1,24 @@
+<script>
+import Mixin from './mixin'
+export default{
+  mixins : [Mixin]
+
+}
+</script>
 <template>
-  <div id="app">
-    <ApiDataFetch />
-    <ApiDataPost />
+  <div id="test">
+    <h1>Đây là kết quả: {{ this.count }}</h1><br>
+    <button @click="increment()">Tăng</button>
   </div>
 </template>
 
-<script>
-import ApiDataFetch from './components/ApiDataFetch.vue';
-import ApiDataPost from './components/ApiDataPost.vue';
 
-export default {
-  name: 'App',
-  components: {
-    ApiDataFetch,
-    ApiDataPost
-  }
-};
-</script>
 
-<style>
-#app {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+ #test{
+  background-color: #4CAF50;
+    color: white;
+    padding: 100px;
 }
+
 </style>
