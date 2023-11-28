@@ -1,23 +1,26 @@
-<!-- src/App.vue -->
 <template>
   <div id="app">
-    <DynamicTabbedLayout />
+    <ApiDataFetch />
+    <ApiDataPost />
   </div>
 </template>
 
 <script>
-import DynamicTabbedLayout from './components/DynamicTabbedLayout.vue';
+import ApiDataFetch from './components/ApiDataFetch.vue';
+import ApiDataPost from './components/ApiDataPost.vue';
 
 export default {
+  name: 'App',
   components: {
-    DynamicTabbedLayout,
-  },
+    ApiDataFetch,
+    ApiDataPost
+  }
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
